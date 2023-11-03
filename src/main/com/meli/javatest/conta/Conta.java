@@ -12,6 +12,7 @@ public class Conta {
     private static int contador = 0;
 
     public Conta() {
+        BancoDeContas.adicionarConta(this);
         contador += 1;
         this.identificador = contador;
     }
@@ -42,6 +43,11 @@ public class Conta {
         else {
             throw new IllegalArgumentException("O valor para o depósito deve ser maior que R$0,00!");
         }
+    }
+
+    public void transfere(double valor, Conta conta){
+        this.saca(valor);
+        conta.deposita(valor);
     }
 
     public double calculaRendimento(){

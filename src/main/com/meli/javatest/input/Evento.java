@@ -1,5 +1,8 @@
 package main.com.meli.javatest.input;
 
+import main.com.meli.javatest.conta.BancoDeContas;
+import main.com.meli.javatest.conta.Conta;
+
 import java.util.*;
 
 public class Evento {
@@ -55,4 +58,14 @@ public class Evento {
             throw new IllegalArgumentException("O campo nao é compatível ao tipo de dado requerido");
         }
     }
+
+    public Conta getDestino(String atributo){
+        if (atributo.equalsIgnoreCase("destino")){
+            System.out.print("Informe o número da conta a transferir: ");
+            campoValores.put("destino", sc.nextInt());
+            return BancoDeContas.obterConta((Integer) campoValores.get("destino"));
+        }
+        throw new IllegalArgumentException("O campo nao é compatível ao tipo de dado requerido");
+    }
+
 }

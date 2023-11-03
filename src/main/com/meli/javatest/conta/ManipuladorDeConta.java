@@ -33,4 +33,9 @@ public class ManipuladorDeConta {
         double valorDigitado = evento.getDouble("valorOperacao");
         this.conta.saca(valorDigitado);
     }
+
+    public void transfere(Evento evento) {
+        Conta destino = (Conta) evento.getDestino("destino");
+        conta.transfere(evento.getDouble("valorTransferencia"), destino);
+    }
 }
