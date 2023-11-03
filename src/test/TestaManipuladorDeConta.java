@@ -5,7 +5,7 @@ import main.com.meli.javatest.data.Data;
 import main.com.meli.javatest.input.Evento;
 import main.com.meli.javatest.conta.ManipuladorDeConta;
 
-public class TestaContas {
+public class TestaManipuladorDeConta {
     public static void main(String[] args) {
         ManipuladorDeConta manipuladorDeConta = new ManipuladorDeConta();
         Evento evento = new Evento(300);
