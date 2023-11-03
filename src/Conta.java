@@ -4,12 +4,18 @@ public class Conta {
     private String agencia;
     private double saldo;
     private Data dataAbertura;
+    private int identificador;
+    private static int contador = 0;
 
     public Conta() {
-
+        contador += 1;
+        this.identificador = contador;
     }
 
     public Conta(String nomeTitular){
+        contador += 1;
+        this.identificador = contador;
+
         this.nomeTitular = nomeTitular;
     }
 
@@ -85,5 +91,9 @@ public class Conta {
 
     public void setDataAbertura(Data dataAbertura) {
         this.dataAbertura = dataAbertura;
+    }
+
+    public int getIdentificador() {
+        return identificador;
     }
 }
