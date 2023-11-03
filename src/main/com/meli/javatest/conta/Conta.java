@@ -6,7 +6,7 @@ public class Conta {
     private String nomeTitular;
     private int numero;
     private String agencia;
-    private double saldo;
+    protected double saldo;
     private Data dataAbertura;
     private int identificador;
     private static int contador = 0;
