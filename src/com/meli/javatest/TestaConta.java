@@ -1,3 +1,6 @@
+package com.meli.javatest;
+
+import com.meli.javatest.data.Data;
 
 public class TestaConta {
 
