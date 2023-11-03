@@ -1,6 +1,6 @@
-package com.meli.javatest.conta;
+package main.com.meli.javatest.conta;
 
-import com.meli.javatest.data.Data;
+import main.com.meli.javatest.data.Data;
 
 public class Conta {
     private String nomeTitular;
@@ -50,10 +50,10 @@ public class Conta {
 
     public String recuperarDadosParaImpressao(){
         String dados = "\nTitular: " + this.nomeTitular;
-        dados += "\nNúmero da com.meli.javatest.conta: " + this.numero;
+        dados += "\nNúmero: " + this.numero;
         dados += "\nAgência: " + this.agencia;
         dados += "\nSaldo R$: " + this.saldo;
-        dados += "\ncom.meli.javatest.data.Data de abertura: " + this.dataAbertura.retornaFormatada();
+        dados += "\nData de abertura: " + this.dataAbertura.retornaFormatada();
         return dados;
     }
 

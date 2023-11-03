@@ -1,4 +1,4 @@
-package com.meli.javatest.data;
+package main.com.meli.javatest.data;
 
 import java.time.LocalDate;
 
@@ -9,6 +9,9 @@ public class Data {
 
     public Data(int dia, int mes, int ano){
         validaData(dia, mes,ano);
+        this.dia = dia;
+        this.mes = mes;
+        this.ano = ano;
     }
 
     public String retornaFormatada(){
@@ -42,7 +45,7 @@ public class Data {
 
         for (int maximoDia : listaMaximoDias) {
             if (dia > maximoDia) {
-                throw new IllegalArgumentException("com.meli.javatest.data.Data inválida! Dia inválido para o mês correspondente");
+                throw new IllegalArgumentException("Data inválida! Dia inválido para o mês correspondente");
             }
         }
     }
