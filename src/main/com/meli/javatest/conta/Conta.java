@@ -30,7 +30,7 @@ public class Conta {
             saldo -= valor;
             System.out.println("Saque de R$" + valor +  " realizado com sucesso! ");
         } else {
-            System.out.println("Saldo insuficiente!");
+            throw new IllegalArgumentException("Saldo insuficiente!");
         }
     }
 
@@ -40,7 +40,7 @@ public class Conta {
             System.out.println("Depósito de R$" + valor + " realizado com sucesso!");
         }
         else {
-            System.out.println("O valor para o depósito deve ser maior que R$0,00!");
+            throw new IllegalArgumentException("O valor para o depósito deve ser maior que R$0,00!");
         }
     }
 
