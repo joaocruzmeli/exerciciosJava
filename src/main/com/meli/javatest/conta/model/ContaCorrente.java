@@ -1,6 +1,8 @@
 package main.com.meli.javatest.conta.model;
 
-public class ContaCorrente extends Conta{
+import main.com.meli.javatest.conta.interfaces.Tributavel;
+
+public class ContaCorrente extends Conta implements Tributavel {
 
     @Override
     public void saca(double valor) {
@@ -15,6 +17,11 @@ public class ContaCorrente extends Conta{
     }
 
     public String getTipo(){
-        return super.getTipo() + " Corrente";
+        return "Conta Corrente";
+    }
+
+    @Override
+    public double getValorImposto() {
+        return this.getSaldo() * 0.01;
     }
 }

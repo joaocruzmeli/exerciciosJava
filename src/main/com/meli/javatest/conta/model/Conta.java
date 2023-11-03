@@ -58,12 +58,11 @@ public abstract class Conta {
         dados += "\nAgência: " + this.agencia;
         dados += "\nSaldo R$: " + this.saldo;
         dados += "\nData de abertura: " + this.dataAbertura.retornaFormatada();
+        dados += "\nTipo da Conta: " + this.getTipo();
         return dados;
     }
 
-    public String getTipo() {
-        return "Conta";
-    }
+    public abstract String getTipo();
 
     public String getNomeTitular() {
         return nomeTitular;
