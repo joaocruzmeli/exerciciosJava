@@ -1,6 +1,6 @@
 package test;
 
-import main.com.meli.javatest.conta.Conta;
+import main.com.meli.javatest.conta.model.Conta;
 import main.com.meli.javatest.data.Data;
 
 public class TestaConta {

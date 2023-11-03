@@ -1,4 +1,4 @@
-package main.com.meli.javatest.conta;
+package main.com.meli.javatest.conta.model;
 
 public class ContaCorrente extends Conta{
 

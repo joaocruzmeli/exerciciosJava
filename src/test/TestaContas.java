@@ -1,8 +1,6 @@
 package test;
 
-import main.com.meli.javatest.conta.Conta;
-import main.com.meli.javatest.conta.ContaCorrente;
-import main.com.meli.javatest.conta.ContaPoupanca;
+import main.com.meli.javatest.conta.model.Conta;
 import main.com.meli.javatest.input.Evento;
 import main.com.meli.javatest.conta.ManipuladorDeConta;
 

@@ -1,10 +1,9 @@
 package test;
 
-import main.com.meli.javatest.conta.Conta;
-import main.com.meli.javatest.data.Data;
-
 public class TestaDataDeAbertura {
     public static void main(String[] args) {
+        /* Conta se tornou uma classe abstrata
+
         Conta conta = new Conta();
         conta.setNomeTitular("Joao");
         conta.setAgencia("1234");
@@ -17,5 +16,7 @@ public class TestaDataDeAbertura {
         System.out.println(conta.calculaRendimento());
 
         System.out.println(conta.recuperarDadosParaImpressao());
+
+         */
     }
 }

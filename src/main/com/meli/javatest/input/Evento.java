@@ -1,7 +1,7 @@
 package main.com.meli.javatest.input;
 
 import main.com.meli.javatest.conta.BancoDeContas;
-import main.com.meli.javatest.conta.Conta;
+import main.com.meli.javatest.conta.model.Conta;
 
 import java.util.*;
 

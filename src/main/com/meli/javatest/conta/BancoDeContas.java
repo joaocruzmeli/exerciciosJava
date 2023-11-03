@@ -1,5 +1,7 @@
 package main.com.meli.javatest.conta;
 
+import main.com.meli.javatest.conta.model.Conta;
+
 import java.util.HashMap;
 
 public class BancoDeContas {

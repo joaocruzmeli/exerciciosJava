@@ -1,8 +1,8 @@
-package main.com.meli.javatest.conta;
+package main.com.meli.javatest.conta.model;
 
 import main.com.meli.javatest.data.Data;
 
-public class Conta {
+public abstract class Conta {
     private String nomeTitular;
     private int numero;
     private String agencia;
