@@ -8,10 +8,9 @@ import main.com.meli.javatest.conta.ManipuladorDeConta;
 public class TestaManipuladorDeConta {
     public static void main(String[] args) {
         ManipuladorDeConta manipuladorDeConta = new ManipuladorDeConta();
-        Evento evento = new Evento(300);
+        Evento evento = new Evento();
 
         Conta conta = manipuladorDeConta.criarConta(evento);
-        Data data = new Data(1, 11, 2012);
 
         System.out.println(conta.recuperarDadosParaImpressao());
 
