@@ -34,12 +34,14 @@ public class Conta {
         return saldo * 0.1;
     }
 
-    public void recuperarDadosParaImpressao(){
-        System.out.println("------ Dados da conta ------" );
-        System.out.println("Nome do titular:" + nomeTitular);
-        System.out.println("Numero da conta: " + numero);
-        System.out.println("Agencia: " + agencia);
-        System.out.println("Saldo: R$" + saldo);
-        System.out.println("Data de abertura: " + dataAbertura);
+    public String recuperarDadosParaImpressao(){
+        String dados = "\nTitular: " + this.nomeTitular;
+        dados += "\nNúmero da conta: " + this.numero;
+        dados += "\nAgência: " + this.agencia;
+        dados += "\nSaldo R$: " + this.saldo;
+        dados += "\nDia : " + this.dataAbertura.dia;
+        dados += "\nDia : " + this.dataAbertura.mes;
+        dados += "\nDia : " + this.dataAbertura.ano;
+        return dados;
     }
 }

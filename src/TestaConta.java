@@ -7,6 +7,6 @@ public class TestaConta {
         c1.saldo = 200;
 
         Data data = new Data();
-        c1.dataAbertura = data;
+        System.out.println(c1.recuperarDadosParaImpressao());
     }
 }
