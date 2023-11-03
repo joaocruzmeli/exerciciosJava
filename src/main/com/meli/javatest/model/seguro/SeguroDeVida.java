@@ -1,4 +1,4 @@
-package main.com.meli.javatest.modelo.seguro;
+package main.com.meli.javatest.model.seguro;
 
 import main.com.meli.javatest.interfaces.Tributavel;
 

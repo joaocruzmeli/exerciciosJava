@@ -1,7 +1,7 @@
 package test;
 
 import main.com.meli.javatest.interfaces.Tributavel;
-import main.com.meli.javatest.modelo.conta.ContaCorrente;
+import main.com.meli.javatest.model.conta.ContaCorrente;
 
 public class TestaTributavel {
     public static void main(String[] args) {

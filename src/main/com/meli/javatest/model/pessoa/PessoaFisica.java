@@ -1,4 +1,4 @@
-package main.com.meli.javatest.modelo.pessoa;
+package main.com.meli.javatest.model.pessoa;
 
 public class PessoaFisica {
     private String cpf;

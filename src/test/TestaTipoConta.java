@@ -1,8 +1,8 @@
 package test;
 
-import main.com.meli.javatest.modelo.conta.Conta;
-import main.com.meli.javatest.modelo.conta.ContaCorrente;
-import main.com.meli.javatest.modelo.conta.ContaPoupanca;
+import main.com.meli.javatest.model.conta.Conta;
+import main.com.meli.javatest.model.conta.ContaCorrente;
+import main.com.meli.javatest.model.conta.ContaPoupanca;
 
 public class TestaTipoConta {
     public static void main(String[] args) {

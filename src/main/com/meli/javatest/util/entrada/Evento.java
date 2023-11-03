@@ -1,10 +1,10 @@
-package main.com.meli.javatest.entrada;
+package main.com.meli.javatest.util.entrada;
 
-import main.com.meli.javatest.bancodedados.BancoDeContas;
+import main.com.meli.javatest.util.bancodedados.BancoDeContas;
 import main.com.meli.javatest.interfaces.Tributavel;
-import main.com.meli.javatest.modelo.conta.Conta;
-import main.com.meli.javatest.modelo.conta.ContaCorrente;
-import main.com.meli.javatest.modelo.seguro.SeguroDeVida;
+import main.com.meli.javatest.model.conta.Conta;
+import main.com.meli.javatest.model.conta.ContaCorrente;
+import main.com.meli.javatest.model.seguro.SeguroDeVida;
 
 import java.util.*;
 

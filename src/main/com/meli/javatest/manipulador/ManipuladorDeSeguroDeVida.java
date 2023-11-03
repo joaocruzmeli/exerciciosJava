@@ -1,7 +1,7 @@
 package main.com.meli.javatest.manipulador;
 
-import main.com.meli.javatest.entrada.Evento;
-import main.com.meli.javatest.modelo.seguro.SeguroDeVida;
+import main.com.meli.javatest.util.entrada.Evento;
+import main.com.meli.javatest.model.seguro.SeguroDeVida;
 
 public class ManipuladorDeSeguroDeVida {
     private SeguroDeVida seguroDeVida;

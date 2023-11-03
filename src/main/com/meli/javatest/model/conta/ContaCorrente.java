@@ -1,4 +1,4 @@
-package main.com.meli.javatest.modelo.conta;
+package main.com.meli.javatest.model.conta;
 
 import main.com.meli.javatest.interfaces.Tributavel;
 

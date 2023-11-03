@@ -1,6 +1,7 @@
-package main.com.meli.javatest.modelo.conta;
+package main.com.meli.javatest.model.conta;
 
-import main.com.meli.javatest.modelo.data.Data;
+import main.com.meli.javatest.exception.ValorInvalidoException;
+import main.com.meli.javatest.model.data.Data;
 
 public abstract class Conta {
     private String nomeTitular;
@@ -39,7 +40,7 @@ public abstract class Conta {
             System.out.println("Depósito de R$" + valor + " realizado com sucesso!");
         }
         else {
-            throw new IllegalArgumentException("O valor para o depósito deve ser maior que R$0,00!");
+            throw new ValorInvalidoException(valor);
         }
     }
 

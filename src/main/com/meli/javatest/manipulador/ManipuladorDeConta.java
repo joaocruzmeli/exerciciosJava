@@ -1,12 +1,12 @@
 package main.com.meli.javatest.manipulador;
 
 
-import main.com.meli.javatest.bancodedados.BancoDeContas;
-import main.com.meli.javatest.modelo.conta.Conta;
-import main.com.meli.javatest.modelo.conta.ContaCorrente;
-import main.com.meli.javatest.modelo.conta.ContaPoupanca;
-import main.com.meli.javatest.entrada.Evento;
-import main.com.meli.javatest.modelo.data.Data;
+import main.com.meli.javatest.util.bancodedados.BancoDeContas;
+import main.com.meli.javatest.model.conta.Conta;
+import main.com.meli.javatest.model.conta.ContaCorrente;
+import main.com.meli.javatest.model.conta.ContaPoupanca;
+import main.com.meli.javatest.util.entrada.Evento;
+import main.com.meli.javatest.model.data.Data;
 
 import java.time.LocalDate;
 

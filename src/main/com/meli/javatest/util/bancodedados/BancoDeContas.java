@@ -1,6 +1,6 @@
-package main.com.meli.javatest.bancodedados;
+package main.com.meli.javatest.util.bancodedados;
 
-import main.com.meli.javatest.modelo.conta.Conta;
+import main.com.meli.javatest.model.conta.Conta;
 
 import java.util.HashMap;
 

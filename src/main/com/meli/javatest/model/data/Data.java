@@ -1,4 +1,4 @@
-package main.com.meli.javatest.modelo.data;
+package main.com.meli.javatest.model.data;
 
 import java.time.LocalDate;
 
