@@ -62,7 +62,7 @@ public class Conta {
     }
 
     public String getTipo() {
-        return "Conta Base";
+        return "Conta";
     }
 
     public String getNomeTitular() {
