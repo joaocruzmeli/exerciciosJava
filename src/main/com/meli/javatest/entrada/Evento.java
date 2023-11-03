@@ -1,7 +1,10 @@
 package main.com.meli.javatest.entrada;
 
 import main.com.meli.javatest.bancodedados.BancoDeContas;
+import main.com.meli.javatest.interfaces.Tributavel;
 import main.com.meli.javatest.modelo.conta.Conta;
+import main.com.meli.javatest.modelo.conta.ContaCorrente;
+import main.com.meli.javatest.modelo.seguro.SeguroDeVida;
 
 import java.util.*;
 
@@ -73,6 +76,18 @@ public class Evento {
             System.out.print("Informe o número da conta a transferir: ");
             campoValores.put("destino", sc.nextInt());
             return BancoDeContas.obterConta((Integer) campoValores.get("destino"));
+        }
+        throw new IllegalArgumentException("O campo nao é compatível ao tipo de dado requerido");
+    }
+
+    public List<Tributavel> getListaTributaveis(String atributo){
+        if (atributo.equalsIgnoreCase("listaTributaveis")){
+            System.out.print("Informe o número da conta a transferir: ");
+            List<Object> listaTributaveis = new ArrayList<>();
+            listaTributaveis.add(new ContaCorrente());
+            listaTributaveis.add(new SeguroDeVida());
+            campoValores.put("listaTributaveis", listaTributaveis);
+            return (List<Tributavel>) campoValores.get("listaTributaveis");
         }
         throw new IllegalArgumentException("O campo nao é compatível ao tipo de dado requerido");
     }
