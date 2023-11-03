@@ -3,12 +3,10 @@ package main.com.meli.javatest.conta;
 import java.util.HashMap;
 
 public class BancoDeContas {
-    private static HashMap<Integer, Conta> contas;
+    private static HashMap<Integer, Conta> contas = new HashMap<>();
 
-    public BancoDeContas() {
-        if (contas == null) {
-            contas = new HashMap<>();
-        }
+    public BancoDeContas(){
+
     }
 
     public static void adicionarConta(Conta conta) {

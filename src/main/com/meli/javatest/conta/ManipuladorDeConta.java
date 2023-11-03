@@ -8,6 +8,10 @@ import java.time.LocalDate;
 
 public class ManipuladorDeConta {
     private Conta conta;
+
+    public ManipuladorDeConta(){
+    }
+
     public Conta criarConta(Evento evento){
         String tipo = evento.getString("tipo");
         if (tipo.equalsIgnoreCase("Corrente")) {
@@ -21,6 +25,8 @@ public class ManipuladorDeConta {
         this.conta.setSaldo(0);
         Data data = new Data(LocalDate.now().getDayOfMonth(), LocalDate.now().getMonthValue(), LocalDate.now().getYear());
         this.conta.setDataAbertura(data);
+
+        BancoDeContas.adicionarConta(this.conta);
         return conta;
     }
 
@@ -35,7 +41,7 @@ public class ManipuladorDeConta {
     }
 
     public void transfere(Evento evento) {
-        Conta destino = (Conta) evento.getDestino("destino");
-        conta.transfere(evento.getDouble("valorTransferencia"), destino);
+        Conta destino = evento.getDestino("destino");
+        this.conta.transfere(evento.getDouble("valorOperacao"), destino);
     }
 }

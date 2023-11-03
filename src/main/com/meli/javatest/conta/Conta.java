@@ -12,7 +12,6 @@ public class Conta {
     private static int contador = 0;
 
     public Conta() {
-        BancoDeContas.adicionarConta(this);
         contador += 1;
         this.identificador = contador;
     }
@@ -20,7 +19,6 @@ public class Conta {
     public Conta(String nomeTitular){
         contador += 1;
         this.identificador = contador;
-
         this.nomeTitular = nomeTitular;
     }
 
@@ -37,7 +35,7 @@ public class Conta {
 
     public void deposita(double valor){
         if (valor > 0 ){
-            saldo += valor;
+            this.saldo += valor;
             System.out.println("Depósito de R$" + valor + " realizado com sucesso!");
         }
         else {
