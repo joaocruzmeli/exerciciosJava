@@ -6,7 +6,7 @@ public class TestaConta {
         c1.nomeTitular = "Joao";
         c1.saldo = 200;
 
-        Data data = new Data();
-        System.out.println(c1.recuperarDadosParaImpressao());
+        Conta.saldo = 1234;
+        Conta.calculaRendimento();
     }
 }
