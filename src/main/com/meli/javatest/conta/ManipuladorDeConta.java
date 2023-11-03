@@ -26,8 +26,11 @@ public class ManipuladorDeConta {
 
     public void saca(Evento evento){
         double valorDigitado = evento.getDouble("valorOperacao");
+        if (this.conta.getTipo().equals("Conta Corrente")){
+            this.conta.saca(valorDigitado + 0.10);
+        } else {
+            this.conta.saca(valorDigitado);
+        }
         this.conta.saca(valorDigitado);
     }
-
-
 }

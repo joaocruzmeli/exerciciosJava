@@ -57,6 +57,10 @@ public class Conta {
         return dados;
     }
 
+    public String getTipo() {
+        return "Conta Base";
+    }
+
     public String getNomeTitular() {
         return nomeTitular;
     }
