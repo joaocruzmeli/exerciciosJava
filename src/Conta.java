@@ -9,6 +9,10 @@ public class Conta {
 
     }
 
+    public Conta(String nomeTitular){
+        this.nomeTitular = nomeTitular;
+    }
+
     public void saca(double valor) {
         if (valor <= 0) {
             System.out.println("O valor para o saque deve ser maior que R$0.00!");

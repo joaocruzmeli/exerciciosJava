@@ -8,12 +8,7 @@ public class TestaConta {
         c1.setAgencia("1234");
         c1.setSaldo(5000);
 
-        /* Método incorreto de acesso
-        c1.nomeTitular = "Joao";
-        c1.numero = 1234;
-        c1.agencia = "1234";
-        c1.saldo = 5000;
-        */
+        Conta c2 = new Conta("Victor");
 
         Data data = new Data();
         data.dia = 10;
@@ -23,5 +18,6 @@ public class TestaConta {
         c1.setDataAbertura(data);
 
         System.out.println(c1.recuperarDadosParaImpressao());
+        System.out.println(c2.getNomeTitular());
     }
 }
