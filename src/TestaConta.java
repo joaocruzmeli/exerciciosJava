@@ -6,7 +6,13 @@ public class TestaConta {
         c1.nomeTitular = "Joao";
         c1.saldo = 200;
 
-        Conta.saldo = 1234;
-        Conta.calculaRendimento();
+        Data data = new Data();
+        data.dia = 10;
+        data.mes = 11;
+        data.ano = 2000;
+
+        c1.dataAbertura = data;
+
+        System.out.println(c1.recuperarDadosParaImpressao());
     }
 }

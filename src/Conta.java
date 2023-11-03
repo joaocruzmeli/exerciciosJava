@@ -39,9 +39,7 @@ public class Conta {
         dados += "\nNúmero da conta: " + this.numero;
         dados += "\nAgência: " + this.agencia;
         dados += "\nSaldo R$: " + this.saldo;
-        dados += "\nDia : " + this.dataAbertura.dia;
-        dados += "\nDia : " + this.dataAbertura.mes;
-        dados += "\nDia : " + this.dataAbertura.ano;
+        dados += "\nData de abertura: " + this.dataAbertura.retornaFormatada();
         return dados;
     }
 }
