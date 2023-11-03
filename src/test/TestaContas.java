@@ -1,8 +1,10 @@
 package test;
 
-import main.com.meli.javatest.conta.model.Conta;
-import main.com.meli.javatest.input.Evento;
-import main.com.meli.javatest.conta.ManipuladorDeConta;
+import main.com.meli.javatest.manipulador.ManipuladorDeSeguroDeVida;
+import main.com.meli.javatest.modelo.conta.Conta;
+import main.com.meli.javatest.entrada.Evento;
+import main.com.meli.javatest.manipulador.ManipuladorDeConta;
+import main.com.meli.javatest.modelo.seguro.SeguroDeVida;
 
 public class TestaContas {
     public static void main(String[] args) {
@@ -27,6 +29,11 @@ public class TestaContas {
 
         System.out.println(c1.recuperarDadosParaImpressao());
         System.out.println(c2.recuperarDadosParaImpressao());
+
+        ManipuladorDeSeguroDeVida manipuladorDeSeguroDeVida = new ManipuladorDeSeguroDeVida();
+        SeguroDeVida s1 = manipuladorDeSeguroDeVida.criaSeguro(evento);
+
+        System.out.println(s1.recuperarDadosParaImpressao());
 
     }
 }

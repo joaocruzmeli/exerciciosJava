@@ -1,6 +1,6 @@
 package test;
 
-import main.com.meli.javatest.data.Data;
+import main.com.meli.javatest.modelo.data.Data;
 
 public class TestaData {
     Data d1 = new Data(1, 11, 2023);

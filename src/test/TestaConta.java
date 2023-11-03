@@ -1,8 +1,5 @@
 package test;
 
-import main.com.meli.javatest.conta.model.Conta;
-import main.com.meli.javatest.data.Data;
-
 public class TestaConta {
     public static void main(String[] args) {
         /* A classe conta se tornou abstrata
