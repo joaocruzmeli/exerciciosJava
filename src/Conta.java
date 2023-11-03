@@ -33,4 +33,13 @@ public class Conta {
     public double calculaRendimento(){
         return saldo * 0.1;
     }
+
+    public void recuperarDadosParaImpressao(){
+        System.out.println("------ Dados da conta ------" );
+        System.out.println("Nome do titular:" + nomeTitular);
+        System.out.println("Numero da conta: " + numero);
+        System.out.println("Agencia: " + agencia);
+        System.out.println("Saldo: R$" + saldo);
+        System.out.println("Data de abertura: " + dataAbertura);
+    }
 }
