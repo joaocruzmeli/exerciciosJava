@@ -1,9 +1,9 @@
 public class Conta {
-    public String nomeTitular;
-    public int numero;
-    public String agencia;
-    public double saldo;
-    public Data dataAbertura;
+    private String nomeTitular;
+    private int numero;
+    private String agencia;
+    private double saldo;
+    private Data dataAbertura;
 
     public Conta() {
 
@@ -31,7 +31,7 @@ public class Conta {
     }
 
     public double calculaRendimento(){
-        return saldo * 0.1;
+        return this.saldo * 0.1;
     }
 
     public String recuperarDadosParaImpressao(){
@@ -41,5 +41,45 @@ public class Conta {
         dados += "\nSaldo R$: " + this.saldo;
         dados += "\nData de abertura: " + this.dataAbertura.retornaFormatada();
         return dados;
+    }
+
+    public String getNomeTitular() {
+        return nomeTitular;
+    }
+
+    public void setNomeTitular(String nomeTitular) {
+        this.nomeTitular = nomeTitular;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
+    public String getAgencia() {
+        return agencia;
+    }
+
+    public void setAgencia(String agencia) {
+        this.agencia = agencia;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
+    public Data getDataAbertura() {
+        return dataAbertura;
+    }
+
+    public void setDataAbertura(Data dataAbertura) {
+        this.dataAbertura = dataAbertura;
     }
 }
