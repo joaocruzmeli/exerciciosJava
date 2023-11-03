@@ -17,9 +17,9 @@ public class Evento {
             System.out.print("Informe o saldo da conta: ");
             campoValores.put("saldo", sc.next());
             return validarDouble(campoValores.get("saldo"));
-        } else if (atributo.equalsIgnoreCase("valor")) {
+        } else if (atributo.equalsIgnoreCase("valorOperacao")) {
             System.out.print("Informe o valor: ");
-            campoValores.put("valor", sc.next());
+            campoValores.put("valorOperacao", sc.next());
             return validarDouble(campoValores.get("valor"));
         } else {
             throw new IllegalArgumentException("O campo nao é compatível ao tipo de dado requerido");

@@ -20,12 +20,12 @@ public class ManipuladorDeConta {
     }
 
     public void deposita(Evento evento){
-        double valorDigitado = evento.getDouble("valor");
+        double valorDigitado = evento.getDouble("valorOperacao");
         this.conta.saca(valorDigitado);
     }
 
     public void saca(Evento evento){
-        double valorDigitado = evento.getDouble("valor");
+        double valorDigitado = evento.getDouble("valorOperacao");
         this.conta.saca(valorDigitado);
     }
 
